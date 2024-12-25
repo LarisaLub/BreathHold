@@ -1,13 +1,18 @@
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
-import './App.css';
 import Footer from './components/Footer/Footer';
+import Figure from './components/Figure';
+import { StyledApp,AppBody } from './StyledApp';
 
 function App() {
   return (
-    <div>
+    <StyledApp>
       <HeaderMenu />
+     <AppBody> 
+      <Figure />
+     </AppBody>
       <Footer />
-    </div>
+
+    </StyledApp>
   );
 }
 
